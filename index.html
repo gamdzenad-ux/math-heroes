@@ -9,58 +9,98 @@
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#FFF8E7;
-    text-align:center;
+font-family:Arial,sans-serif;
+background:#FFF8E7;
+text-align:center;
+color:#444;
 }
 
 header{
-    background:#FFB3D9;
-    color:#444;
-    padding:30px;
+background:#FFD1E8;
+padding:35px 20px;
 }
 
-nav{
-    background:#A7E3FF;
-    padding:15px;
+header h1{
+font-size:42px;
+margin-bottom:15px;
 }
 
-nav a{
-    color:#444;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
-    font-size:18px;
+header p{
+font-size:22px;
 }
 
-section{
-    padding:30px;
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:30px 15px;
 }
 
 .card{
-    background:white;
-    width:85%;
-    margin:auto;
-    padding:25px;
-    border-radius:25px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+width:280px;
+background:white;
+border-radius:25px;
+padding:25px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h2{
-    color:#FF69B4;
+margin:15px 0;
 }
 
 .card p{
-    font-size:20px;
-    line-height:2;
+line-height:1.8;
+}
+
+.numbers{
+background:#E8D9FF;
+}
+
+.operations{
+background:#DFF7E2;
+}
+
+.shapes{
+background:#FFF1C9;
+}
+
+.games{
+background:#FFDDEB;
+}
+
+.button{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:#FF69B4;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.welcome{
+padding:25px;
+font-size:24px;
 }
 
 footer{
-    margin-top:30px;
-    padding:20px;
-    color:#666;
+margin-top:20px;
+padding:25px;
+font-size:22px;
 }
 
 </style>
@@ -79,47 +119,79 @@ footer{
 
 </header>
 
-<nav>
+<div class="welcome">
 
-<a href="index.html">الرئيسية</a>
-
-<a href="numbers.html">الأعداد</a>
-
-<a href="#">الجمع والطرح</a>
-
-<a href="#">الأشكال الهندسية</a>
-
-<a href="#">الألعاب</a>
-
-</nav>
-
-<section>
-
-<div class="card">
-
-<h2>مرحبًا يا أبطال 👋</h2>
+<h2>👋 مرحباً يا أبطال</h2>
 
 <p>
-استعدوا لرحلة مليئة بالمرح والتعلم داخل عالم الرياضيات.
+استعدوا لرحلة مليئة بالمرح والتعلم داخل عالم الرياضيات
 </p>
 
-<h3>اختر مغامرتك</h3>
+</div>
+
+<section class="cards">
+
+<div class="card numbers">
+
+<div style="font-size:60px;">🔢</div>
+
+<h2>عالم الأعداد</h2>
 
 <p>
-🔢 عالم الأعداد
-<br><br>
-
-➕ قلعة الجمع والطرح
-<br><br>
-
-🔺 جزيرة الأشكال الهندسية
-<br><br>
-
-🎮 تحديات وألعاب ممتعة
-<br><br>
-
-🏆 اجمع النجوم واربح الشارات
+تعرف على الأعداد وتعلم العد بسهولة
 </p>
+
+<a class="button" href="#">
+ابدأ الآن
+</a>
+
+</div>
+
+<div class="card operations">
+
+<div style="font-size:60px;">➕</div>
+
+<h2>قلعة الجمع والطرح</h2>
+
+<p>
+تدرب على الجمع والطرح بطريقة ممتعة
+</p>
+
+<a class="button" href="#">
+ابدأ الآن
+</a>
+
+</div>
+
+<div class="card shapes">
+
+<div style="font-size:60px;">🔺</div>
+
+<h2>جزيرة الأشكال الهندسية</h2>
+
+<p>
+اكتشف الأشكال الهندسية وتعرف على خصائصها
+</p>
+
+<a class="button" href="#">
+ابدأ الآن
+</a>
+
+</div>
+
+<div class="card games">
+
+<div style="font-size:60px;">🎮</div>
+
+<h2>التحديات والألعاب</h2>
+
+<p>
+اختبر مهاراتك واحصل على النجوم
+</p>
+
+<a class="button" href="#">
+ابدأ الآن
+</a>
 
 </div>
 
@@ -127,7 +199,7 @@ footer{
 
 <footer>
 
-🌟 تعلم • العب • استمتع 🌟
+🏆 تعلم • العب • استمتع 🏆
 
 </footer>
 
